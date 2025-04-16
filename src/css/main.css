@@ -1,0 +1,22 @@
+.main {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--rosa-nude);
+    font-family: 'inter';
+}
+
+
+.conteiner-ft>img {
+    padding: 2rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.conteiner-ft>h1{
+    padding-bottom: 1.5rem;
+}
