@@ -1,12 +1,17 @@
-:root{
-    --rosa-nude: 	#f8e1e7;
-    --branco: 	#fff;
-    --dourado: 	#d4af37;
-    --preto: 	#222222;
-    --cinza-claro: 		#f2f2f2;
+:root {
+    --roxo-alegre: #693280;
+    --branco: #fff;
+    --roxo-escuro: #2a1433;
+    --roxo-rosa: #a35ebf;
+    --roxo-claro: #cfaadd;
+    --roxo-terceiro: #b277c9;
+    --dourado: #ffc746;
+    --preto: #000;
 }
 
-body{
-    font-family: 'Inter';
+body {
+    font-family: 'dancing';
+    background-image: url(./../imagens/fundo-texturizado-aquarela-salpicado-abstrato_187069-11566.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
