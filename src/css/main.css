@@ -1,18 +1,20 @@
 .main {
-    height: 50vh;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 50px;
+    padding-left: 30px;
     font-size: 2rem;
     text-align: center;
 }
 
 
 .conteiner-ft>img {
-    padding: 2rem;
-    width: 15rem;
-    height: 17rem;
+    width: 12rem;
+    height: 13rem;
     border-radius: 50%;
+    box-shadow: 4px -1px 69px 11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px -1px 69px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px -1px 69px 11px rgba(0,0,0,0.75);
 }
 
 .conteiner-ft>h1{

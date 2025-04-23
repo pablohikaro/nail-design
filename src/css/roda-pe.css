@@ -1,0 +1,10 @@
+.roda-pe{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.roda-pe>img{
+    height: 25px;
+}

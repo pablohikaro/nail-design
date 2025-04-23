@@ -10,7 +10,8 @@
 
 
 .conteiner-galeria{
-    min-height: 80vh;  
+    min-height: 80vh;
+    margin-bottom: 5rem;
     padding-top: 2rem;
     font-family: 'dancing';
     background-color: var(--branco);
