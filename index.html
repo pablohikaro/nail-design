@@ -10,13 +10,18 @@
 </head>
 
 <body>
-    <header class="main-header">
+    <header id="home" class="main-header">
         <nav class="main-nav">
             <img src="./src/imagens/WhatsApp Image 2025-04-16 at 10.18.51.jpeg" alt="logo da designer">
-            <ul class="menu">
-                <li><a href="">Nossos serviços</a></li>
-                <li><a href="">Galeria</a></li>
-                <li><a href="">Agende seu horario</a></li>
+    
+            <button id="hamburger-button" class="hamburger-button" aria-label="Menu Principal" aria-controls="menu" aria-expanded="false">
+                <span class="icon"></span>
+            </button>
+    
+            <ul id="menu" class="menu menu-closed" aria-hidden="true">
+                <li><a href="#">Nossos serviços</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Agende seu horário</a></li>
             </ul>
         </nav>
     </header>

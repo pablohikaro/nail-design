@@ -1,31 +1,103 @@
-.main-header{
-    background-color: var(--cinza-claro);
-    font-family: 'dancing';
+
+.main-header {
     background-color: var(--branco);
+    font-family: 'dancing';
 }
 
-.main-nav{
+.main-nav {
     font-size: 2.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
-.menu li a{
- color: var(--preto);
-}
-
-
-.main-nav>img{
+.main-nav > img {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     margin: 10px 50px;
 }
 
-.menu{
+.menu {
     display: inline-flex;
     align-items: center;
-    gap: 9rem;
-    margin-right: 1rem;
+    gap: 4rem;
+    margin-right: 2rem;
+}
+
+.menu li a {
+    color: var(--preto);
     text-shadow: -6px -1px 6px var(--roxo-claro);
+    position: relative;
+}
+
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.hamburger-button .icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+.hamburger-button[aria-expanded="false"] .icon::before {
+    content: "\2630";
+    color: #0d0b0b;
+}
+
+.hamburger-button[aria-expanded="true"] .icon::before {
+    content: "\2715";
+    color: #0d0b0b;
+}
+
+.menu-closed {
+    display: none !important;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger-button {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--branco);
+        padding: 20px;
+        gap: 20px;
+        text-shadow: -6px -1px 6px var(--roxo-claro);
+        z-index: 10;
+        opacity: 0.95;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu li a {
+        font-size: 2.5rem;
+    }
+}
+
+/* 🔧 DESKTOP (a partir de 769px) */
+@media (min-width: 769px) {
+    .hamburger-button {
+        display: none;
+    }
+
+    .menu {
+        display: inline-flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+        opacity: 1;
+    }
 }
